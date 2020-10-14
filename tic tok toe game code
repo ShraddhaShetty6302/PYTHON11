@@ -28,7 +28,10 @@ def game():
 
     turn = 'X'
     count = 0
-
+# If neither X nor O wins and the board is full, we'll declare the result as 'tie'.
+        if count == 9:
+            print("\nGame Over.\n")                
+            print("It's a Tie!!")
 
     for i in range(10):
         printBoard(theBoard)
